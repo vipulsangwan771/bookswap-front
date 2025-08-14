@@ -5,7 +5,8 @@ import { toast } from 'react-toastify';
 
 const AuthContext = createContext();
 // In AuthContext.js, add at the top of the file
-axios.defaults.baseURL = 'http://localhost:5000';
+// axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://bookswap-server-2911.onrender.com';
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
